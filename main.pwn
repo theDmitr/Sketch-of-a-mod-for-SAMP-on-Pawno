@@ -57,10 +57,10 @@ new const public_animations[][8] =
 
 new const name_gun[][] = 
 { 
-    "Кастет", "Гольф клюшка", "Дубинка", "Нож", "Бита", "Лопата", "Кий", "Катана", "Бензопила", "Дилдо", "Дилдо", "Вибратор", "Вибратор", "Цветы", 
-    "Трость", "Взрывная граната", "Дымовая граната", "Коктель молотова", "", "", "", "9mm", "9mm с глушителем", "Дигл", "Дробовик", "Обрез", 
-    "Дробовик", "Микроузи", "MP5", "AK-47", "M4", "Узи", "Рифл", "Снайперская винтовка", "Гранатомёт", "Гранатом", "Огнемёт", "Восьмистволка", 
-    "Липкая бомба", "Детонатор", "Спрей", "Огнетушитель", "Фотоаппарат", "Очки теплового виденья", "Очки ночного виденья", "Парашют" 
+    "ГЉГ Г±ГІГҐГІ", "ГѓГ®Г«ГјГґ ГЄГ«ГѕГёГЄГ ", "Г„ГіГЎГЁГ­ГЄГ ", "ГЌГ®Г¦", "ГЃГЁГІГ ", "Г‹Г®ГЇГ ГІГ ", "ГЉГЁГ©", "ГЉГ ГІГ Г­Г ", "ГЃГҐГ­Г§Г®ГЇГЁГ«Г ", "Г„ГЁГ«Г¤Г®", "Г„ГЁГ«Г¤Г®", "Г‚ГЁГЎГ°Г ГІГ®Г°", "Г‚ГЁГЎГ°Г ГІГ®Г°", "Г–ГўГҐГІГ»", 
+    "Г’Г°Г®Г±ГІГј", "Г‚Г§Г°Г»ГўГ­Г Гї ГЈГ°Г Г­Г ГІГ ", "Г„Г»Г¬Г®ГўГ Гї ГЈГ°Г Г­Г ГІГ ", "ГЉГ®ГЄГІГҐГ«Гј Г¬Г®Г«Г®ГІГ®ГўГ ", "", "", "", "9mm", "9mm Г± ГЈГ«ГіГёГЁГІГҐГ«ГҐГ¬", "Г„ГЁГЈГ«", "Г„Г°Г®ГЎГ®ГўГЁГЄ", "ГЋГЎГ°ГҐГ§", 
+    "Г„Г°Г®ГЎГ®ГўГЁГЄ", "ГЊГЁГЄГ°Г®ГіГ§ГЁ", "MP5", "AK-47", "M4", "Г“Г§ГЁ", "ГђГЁГґГ«", "Г‘Г­Г Г©ГЇГҐГ°Г±ГЄГ Гї ГўГЁГ­ГІГ®ГўГЄГ ", "ГѓГ°Г Г­Г ГІГ®Г¬ВёГІ", "ГѓГ°Г Г­Г ГІГ®Г¬", "ГЋГЈГ­ГҐГ¬ВёГІ", "Г‚Г®Г±ГјГ¬ГЁГ±ГІГўГ®Г«ГЄГ ", 
+    "Г‹ГЁГЇГЄГ Гї ГЎГ®Г¬ГЎГ ", "Г„ГҐГІГ®Г­Г ГІГ®Г°", "Г‘ГЇГ°ГҐГ©", "ГЋГЈГ­ГҐГІГіГёГЁГІГҐГ«Гј", "Г”Г®ГІГ®Г ГЇГЇГ Г°Г ГІ", "ГЋГ·ГЄГЁ ГІГҐГЇГ«Г®ГўГ®ГЈГ® ГўГЁГ¤ГҐГ­ГјГї", "ГЋГ·ГЄГЁ Г­Г®Г·Г­Г®ГЈГ® ГўГЁГ¤ГҐГ­ГјГї", "ГЏГ Г°Г ГёГѕГІ" 
 };
 
 new const missing_guns[] = 
@@ -70,14 +70,14 @@ new const missing_guns[] =
 
 new stringFractions[][] =
 {
-    "Отсутствует",
-    "Скинхеды",
-    "Гопота",
-    "Кавказ",
-    "Больница",
-    "МВД",
-    "Правительство",
-    "Войсковая часть"
+    "ГЋГІГ±ГіГІГ±ГІГўГіГҐГІ",
+    "Г‘ГЄГЁГ­ГµГҐГ¤Г»",
+    "ГѓГ®ГЇГ®ГІГ ",
+    "ГЉГ ГўГЄГ Г§",
+    "ГЃГ®Г«ГјГ­ГЁГ¶Г ",
+    "ГЊГ‚Г„",
+    "ГЏГ°Г ГўГЁГІГҐГ«ГјГ±ГІГўГ®",
+    "Г‚Г®Г©Г±ГЄГ®ГўГ Гї Г·Г Г±ГІГј"
 };
 
 new colorFractions[] =
@@ -233,7 +233,7 @@ public OnPlayerOnArmyStorageCheckpoint(playerid)
     }
     if (Players[playerid][pAmmo] >= MAX_PLAYER_AMMO)
     {
-        SendClientMessage(playerid, -1, "У вас максимальное количество патронов!");
+        SendClientMessage(playerid, -1, "Г“ ГўГ Г± Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ ГІГ°Г®Г­Г®Гў!");
         KillTimer(army_storage_checkpoints_timers[playerid]);
         army_storage_checkpoints_timers[playerid] = -1;
         return 0;
@@ -241,7 +241,7 @@ public OnPlayerOnArmyStorageCheckpoint(playerid)
     new rand = 1 + random(4);
     Players[playerid][pAmmo] = min(MAX_PLAYER_AMMO, Players[playerid][pAmmo] + rand);
     new string[15];
-    format(string, sizeof string, "+%dпт [%i/%i]", rand, Players[playerid][pAmmo], MAX_PLAYER_AMMO);
+    format(string, sizeof string, "+%dГЇГІ [%i/%i]", rand, Players[playerid][pAmmo], MAX_PLAYER_AMMO);
     SendClientMessage(playerid, -1, string);
     return 1;
 }
@@ -272,9 +272,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]);
                                 Players[playerid][pChips]++;
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Чипсы'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'Г—ГЁГЇГ±Г»'");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже максимальное количество чипсов!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г·ГЁГЇГ±Г®Гў!");
                         }
                         case 1:
                         {
@@ -282,9 +282,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]);
                                 Players[playerid][pPizzas]++;
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Пицца'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'ГЏГЁГ¶Г¶Г '");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже максимальное количество пицц!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГЁГ¶Г¶!");
                         }
                         case 2:
                         {
@@ -292,9 +292,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]);
                                 GivePlayerWeapon(playerid, 14, 1);
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Букет цветов'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'ГЃГіГЄГҐГІ Г¶ГўГҐГІГ®Гў'");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже есть букет цветов!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ ГҐГ±ГІГј ГЎГіГЄГҐГІ Г¶ГўГҐГІГ®Гў!");
                         }
                         case 3:
                         {
@@ -302,9 +302,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]);
                                 Players[playerid][pMedchests]++;
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Медицинская аптечка'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'ГЊГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГ Гї Г ГЇГІГҐГ·ГЄГ '");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже максимальное количество аптечек!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г ГЇГІГҐГ·ГҐГЄ!");
                         }
                         case 4:
                         {
@@ -312,9 +312,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]);
                                 GivePlayerWeapon(playerid, 43, 100000000);
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Фотоаппарат'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'Г”Г®ГІГ®Г ГЇГЇГ Г°Г ГІ'");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже есть фотоаппарат!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ ГҐГ±ГІГј ГґГ®ГІГ®Г ГЇГЇГ Г°Г ГІ!");
                         }
                         case 5:
                         {
@@ -322,9 +322,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]);
                                 GivePlayerWeapon(playerid, 41, 400);
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Баллончик с краской'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'ГЃГ Г«Г«Г®Г­Г·ГЁГЄ Г± ГЄГ°Г Г±ГЄГ®Г©'");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже есть баллончик с краской!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ ГҐГ±ГІГј ГЎГ Г«Г«Г®Г­Г·ГЁГЄ Г± ГЄГ°Г Г±ГЄГ®Г©!");
                         }
                         case 6:
                         {
@@ -332,9 +332,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]);
                                 Players[playerid][pMasks]++;
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Маска'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'ГЊГ Г±ГЄГ '");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже есть маска!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ ГҐГ±ГІГј Г¬Г Г±ГЄГ !");
                         }
                         case 7:
                         {
@@ -342,9 +342,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]); 
                                 Players[playerid][pRepairkits]++;
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Ремонтный набор'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'ГђГҐГ¬Г®Г­ГІГ­Г»Г© Г­Г ГЎГ®Г°'");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже максимальное количество ремонтных наборов!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г°ГҐГ¬Г®Г­ГІГ­Г»Гµ Г­Г ГЎГ®Г°Г®Гў!");
                         }
                         case 8:
                         {
@@ -352,13 +352,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                             {
                                 GivePlayerMoney(playerid, -shop_allday_costs[listitem]); 
                                 Players[playerid][pCarjacks]++;
-                                SendClientMessage(playerid, -1, "Вы приобрели 'Домкрат'");
+                                SendClientMessage(playerid, -1, "Г‚Г» ГЇГ°ГЁГ®ГЎГ°ГҐГ«ГЁ 'Г„Г®Г¬ГЄГ°Г ГІ'");
                             }
-                            else SendClientMessage(playerid, -1, "У вас уже есть домкрат!");
+                            else SendClientMessage(playerid, -1, "Г“ ГўГ Г± ГіГ¦ГҐ ГҐГ±ГІГј Г¤Г®Г¬ГЄГ°Г ГІ!");
                         }
                     }
                 }
-                else SendClientMessage(playerid, -1, "У вас недостаточно средств для покупки этого товара!");
+                else SendClientMessage(playerid, -1, "Г“ ГўГ Г± Г­ГҐГ¤Г®Г±ГІГ ГІГ®Г·Г­Г® Г±Г°ГҐГ¤Г±ГІГў Г¤Г«Гї ГЇГ®ГЄГіГЇГЄГЁ ГЅГІГ®ГЈГ® ГІГ®ГўГ Г°Г !");
                 return ShowPlayerDialogShopAllDay(playerid);
             }
         }
@@ -454,21 +454,21 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 
 CMD:s(playerid, params[])
 {
-    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (12 + -2 + MAX_PLAYER_NAME + MAX_PLAYERID_LENGTH))) return SendClientMessage(playerid, -1, "Используйте: /s <Сообщение>");
+    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (12 + -2 + MAX_PLAYER_NAME + MAX_PLAYERID_LENGTH))) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /s <Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ>");
     new string[MAX_CHAT_MESSAGE], bubble_string[MAX_CHAT_MESSAGE - 1 - (14 + -2 + MAX_PLAYER_NAME + MAX_PLAYERID_LENGTH)];
-    format(bubble_string, sizeof bubble_string, "Кричит: %s", params[0]);
+    format(bubble_string, sizeof bubble_string, "ГЉГ°ГЁГ·ГЁГІ: %s", params[0]);
     SetPlayerChatBubble(playerid, bubble_string, 0xFFFFFFAA, 40.0, 5000);
-    format(string, sizeof string, "%s[%d] крикнул: %s", Players[playerid][pName], playerid, params[0]);
+    format(string, sizeof string, "%s[%d] ГЄГ°ГЁГЄГ­ГіГ«: %s", Players[playerid][pName], playerid, params[0]);
     return ProxDetector(playerid, 40.0, -1, string);
 }
 
 CMD:w(playerid, params[])
 {
-    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (14 + -2 + MAX_PLAYER_NAME + MAX_PLAYERID_LENGTH))) return SendClientMessage(playerid, -1, "Используйте: /w <Сообщение>");
+    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (14 + -2 + MAX_PLAYER_NAME + MAX_PLAYERID_LENGTH))) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /w <Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ>");
     new string[MAX_CHAT_MESSAGE], bubble_string[MAX_CHAT_MESSAGE - 1 - (14 + -2 + MAX_PLAYER_NAME + MAX_PLAYERID_LENGTH)];
     format(bubble_string, sizeof bubble_string, params[0]);
     SetPlayerChatBubble(playerid, bubble_string, 0xCCCCCCAA, 5.0, 5000);
-    format(string, sizeof string, "%s[%d] прошептал: %s", Players[playerid][pName], playerid, params[0]);
+    format(string, sizeof string, "%s[%d] ГЇГ°Г®ГёГҐГЇГІГ Г«: %s", Players[playerid][pName], playerid, params[0]);
     return ProxDetector(playerid, 5.0, 0xCCCCCCAA, string);
 }
 
@@ -479,7 +479,7 @@ CMD:n(playerid, params[])
 
 CMD:b(playerid, params[])
 {
-    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (10 + -2 + MAX_PLAYER_NAME + MAX_PLAYERID_LENGTH))) return SendClientMessage(playerid, -1, "Используйте: /b <Сообщение> или /n <Сообщение>");
+    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (10 + -2 + MAX_PLAYER_NAME + MAX_PLAYERID_LENGTH))) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /b <Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ> ГЁГ«ГЁ /n <Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ>");
     new string[MAX_CHAT_MESSAGE];
     format(string, sizeof string, "(( %s[%d]: %s ))", Players[playerid][pName], playerid, params[0]);
     return ProxDetector(playerid, 20.0, 0xAAAAAAAA, string);
@@ -487,7 +487,7 @@ CMD:b(playerid, params[])
 
 CMD:me(playerid, params[])
 {
-    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (1 + -2 + MAX_PLAYER_NAME))) return SendClientMessage(playerid, -1, "Используйте: /me <Сообщение>");
+    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (1 + -2 + MAX_PLAYER_NAME))) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /me <Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ>");
     new string[MAX_CHAT_MESSAGE];
     SetPlayerChatBubble(playerid, params[0], 0xFF99CCAA, 20.0, 5000);
     format(string, sizeof string, "%s %s", Players[playerid][pName], params[0]);
@@ -496,7 +496,7 @@ CMD:me(playerid, params[])
 
 CMD:do(playerid, params[])
 {
-    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (3 + -2 + MAX_PLAYER_NAME))) return SendClientMessage(playerid, -1, "Используйте: /do <Сообщение>");
+    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (3 + -2 + MAX_PLAYER_NAME))) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /do <Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ>");
     new string[MAX_CHAT_MESSAGE];
     SetPlayerChatBubble(playerid, params[0], 0xFF99CCAA, 20.0, 5000);
     format(string, sizeof string, "%s (%s)", params[0], Players[playerid][pName]);
@@ -505,18 +505,18 @@ CMD:do(playerid, params[])
 
 CMD:todo(playerid, params[])
 {
-    if (sscanf(params, "s[144]s[144]", params[0], params[1])) return SendClientMessage(playerid, -1, "Используйте: /todo <Сообщение>*<Действие>");
+    if (sscanf(params, "s[144]s[144]", params[0], params[1])) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /todo <Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ>*<Г„ГҐГ©Г±ГІГўГЁГҐ>");
     new string[MAX_CHAT_MESSAGE];
-    format(string, sizeof string, "- %s {FF99CCAA}— сказал %s, %s", params[0], Players[playerid][pName], params[1]);
+    format(string, sizeof string, "- %s {FF99CCAA}В— Г±ГЄГ Г§Г Г« %s, %s", params[0], Players[playerid][pName], params[1]);
     return ProxDetector(playerid, 20.0, 0xFFFFFFAA, string);
 }
 
 CMD:try(playerid, params[])
 {
-    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (2 + 20 + -2 + MAX_PLAYER_NAME))) return SendClientMessage(playerid, -1, "Используйте: /try <Сообщение>");
+    if (sscanf(params, "s[145]", params[0]) || strlen(params[0]) > (MAX_CHAT_MESSAGE - 1 - (2 + 20 + -2 + MAX_PLAYER_NAME))) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /try <Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ>");
     new string[MAX_CHAT_MESSAGE], bubble_string[MAX_CHAT_MESSAGE - (2 + 20 + -2 + MAX_PLAYER_NAME)], result[20];
-    if (random(2) == 1) result = "{FF0000} (Неудачно)";
-    else result = "{00FF00} (Удачно)";
+    if (random(2) == 1) result = "{FF0000} (ГЌГҐГіГ¤Г Г·Г­Г®)";
+    else result = "{00FF00} (Г“Г¤Г Г·Г­Г®)";
     format(bubble_string, sizeof bubble_string, "%s %s", params[0], result);
     SetPlayerChatBubble(playerid, bubble_string, 0xFF99CCAA, 20.0, 5000);
     format(string, sizeof string, "%s %s %s", Players[playerid][pName], params[0], result);
@@ -525,10 +525,10 @@ CMD:try(playerid, params[])
 
 CMD:healme(playerid, params[])
 {
-    if (Players[playerid][pMedchests] < 1) return SendClientMessage(playerid, -1, "У вас нет аптечек!");
+    if (Players[playerid][pMedchests] < 1) return SendClientMessage(playerid, -1, "Г“ ГўГ Г± Г­ГҐГІ Г ГЇГІГҐГ·ГҐГЄ!");
     new Float:player_health;
     GetPlayerHealth(playerid, player_health);
-    if (player_health > MAX_PLAYER_HEALTH - 5) return SendClientMessage(playerid, -1, "Вы не нуждаетесь в лечении!");
+    if (player_health > MAX_PLAYER_HEALTH - 5) return SendClientMessage(playerid, -1, "Г‚Г» Г­ГҐ Г­ГіГ¦Г¤Г ГҐГІГҐГ±Гј Гў Г«ГҐГ·ГҐГ­ГЁГЁ!");
     Players[playerid][pMedchests]--;
     //SetPlayerAnimation();
     return SetPlayerHealth(playerid, get_min(player_health + 30.0, MAX_PLAYER_HEALTH));
@@ -536,23 +536,23 @@ CMD:healme(playerid, params[])
 
 CMD:givechest(playerid, params[])
 {
-    if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Используйте: /givechest <id получателя>");
-    if (!IsPlayerConnected(params[0])) return SendClientMessage(playerid, -1, "Данный игрок отсутствует на сервере!");
-    if (playerid == params[0]) return SendClientMessage(playerid, -1, "Вы не можете передать аптечку самому себе!");
-    if (GetDistanceBetweenPlayers(playerid, params[0]) > 5.0) return SendClientMessage(playerid, -1, "Игрок находится слишком далеко!");
-    if (Players[playerid][pMedchests] < 1) return SendClientMessage(playerid, -1, "У вас нет аптечек!");
-    if (Players[params[0]][pMedchests] == MAX_PLAYER_MEDCHESTS) return SendClientMessage(playerid, -1, "У игрока полный набор аптечек!");
+    if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /givechest <id ГЇГ®Г«ГіГ·Г ГІГҐГ«Гї>");
+    if (!IsPlayerConnected(params[0])) return SendClientMessage(playerid, -1, "Г„Г Г­Г­Г»Г© ГЁГЈГ°Г®ГЄ Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ!");
+    if (playerid == params[0]) return SendClientMessage(playerid, -1, "Г‚Г» Г­ГҐ Г¬Г®Г¦ГҐГІГҐ ГЇГҐГ°ГҐГ¤Г ГІГј Г ГЇГІГҐГ·ГЄГі Г±Г Г¬Г®Г¬Гі Г±ГҐГЎГҐ!");
+    if (GetDistanceBetweenPlayers(playerid, params[0]) > 5.0) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄ Г­Г ГµГ®Г¤ГЁГІГ±Гї Г±Г«ГЁГёГЄГ®Г¬ Г¤Г Г«ГҐГЄГ®!");
+    if (Players[playerid][pMedchests] < 1) return SendClientMessage(playerid, -1, "Г“ ГўГ Г± Г­ГҐГІ Г ГЇГІГҐГ·ГҐГЄ!");
+    if (Players[params[0]][pMedchests] == MAX_PLAYER_MEDCHESTS) return SendClientMessage(playerid, -1, "Г“ ГЁГЈГ°Г®ГЄГ  ГЇГ®Г«Г­Г»Г© Г­Г ГЎГ®Г° Г ГЇГІГҐГ·ГҐГЄ!");
     Players[playerid][pMedchests]--;
     Players[params[0]][pMedchests]++;
     new string[29 + (-2 + MAX_PLAYER_NAME)];
-    format(string, sizeof string, "передал %s медицинскую аптечку", Players[playerid][pName], Players[params[0]][pName]);
+    format(string, sizeof string, "ГЇГҐГ°ГҐГ¤Г Г« %s Г¬ГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГіГѕ Г ГЇГІГҐГ·ГЄГі", Players[playerid][pName], Players[params[0]][pName]);
     return callcmd::me(playerid, string);
 }
 
 CMD:anim(playerid, params[])
 {
     if (isnull(params)) return ShowPlayerDialogAnimationsList(playerid);
-    if (sscanf(params, "i", params[0]) || params[0] > sizeof public_animations || params[0] < 1) return SendClientMessage(playerid, -1, "Используйте: /anim <Номер анимации>");
+    if (sscanf(params, "i", params[0]) || params[0] > sizeof public_animations || params[0] < 1) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /anim <ГЌГ®Г¬ГҐГ° Г Г­ГЁГ¬Г Г¶ГЁГЁ>");
     params[0]--;
     return OnPlayerSetAnimation(playerid, public_animations[params[0]][0], public_animations[params[0]][1], public_animations[params[0]][2], public_animations[params[0]][3], public_animations[params[0]][4], public_animations[params[0]][5], public_animations[params[0]][6], public_animations[params[0]][7]);
 }
@@ -560,8 +560,8 @@ CMD:anim(playerid, params[])
 CMD:vehdamage(playerid, params[])
 {
 	new vehicleid = GetPlayerVehicleID(playerid);
-	if (vehicleid == 0) return SendClientMessage(playerid, -1, "Используйте в транспортном средстве!");
-	if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Введите: /vehdamage <ЗДОРОВЬЕ>");
+	if (vehicleid == 0) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ Гў ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г®Г¬ Г±Г°ГҐГ¤Г±ГІГўГҐ!");
+	if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Г‚ГўГҐГ¤ГЁГІГҐ: /vehdamage <Г‡Г„ГЋГђГЋГ‚ГњГ…>");
 	return SetVehicleHealth(vehicleid, params[0]);
 }
 
@@ -571,11 +571,11 @@ CMD:givegun(playerid, params[])
     if (sscanf(params, "iii", receiverid, weaponid, ammo)) 
     {
         if (!sscanf(params, "ii", weaponid, ammo)) receiverid = playerid;
-        else return SendClientMessage(playerid, -1, "Используйте: /givegun <id получателя> <id оружия> <Кол-во патрон>");
+        else return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /givegun <id ГЇГ®Г«ГіГ·Г ГІГҐГ«Гї> <id Г®Г°ГіГ¦ГЁГї> <ГЉГ®Г«-ГўГ® ГЇГ ГІГ°Г®Г­>");
     }
-    else if (!IsPlayerConnected(receiverid) && receiverid != -1) return SendClientMessage(playerid, -1, "Данный игрок отсутствует на сервере!");
-    if (weaponid < 1 || weaponid > 46) return SendClientMessage(playerid, -1, "Номер оружия должен быть в промежутке от 1 до 46!");
-    if (!IsValidWeaponID(weaponid)) return SendClientMessage(playerid, -1, "Некорректный номер оружия!");
+    else if (!IsPlayerConnected(receiverid) && receiverid != -1) return SendClientMessage(playerid, -1, "Г„Г Г­Г­Г»Г© ГЁГЈГ°Г®ГЄ Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ!");
+    if (weaponid < 1 || weaponid > 46) return SendClientMessage(playerid, -1, "ГЌГ®Г¬ГҐГ° Г®Г°ГіГ¦ГЁГї Г¤Г®Г«Г¦ГҐГ­ ГЎГ»ГІГј Гў ГЇГ°Г®Г¬ГҐГ¦ГіГІГЄГҐ Г®ГІ 1 Г¤Г® 46!");
+    if (!IsValidWeaponID(weaponid)) return SendClientMessage(playerid, -1, "ГЌГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»Г© Г­Г®Г¬ГҐГ° Г®Г°ГіГ¦ГЁГї!");
     new string[64];
     if (receiverid == -1)
     {
@@ -583,12 +583,12 @@ CMD:givegun(playerid, params[])
         {
             if (!IsPlayerConnected(i)) continue;
             GivePlayerWeapon(i, weaponid, ammo);
-            format(string, sizeof string, "Игровой мастер выдал вам %s.", name_gun[weaponid - 1], ammo);
+            format(string, sizeof string, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° ГўГ»Г¤Г Г« ГўГ Г¬ %s.", name_gun[weaponid - 1], ammo);
             SendClientMessage(i, -1, string);
         }
         return 1;
     }
-    format(string, sizeof string, "Игровой мастер выдал вам %s.", name_gun[weaponid - 1], ammo);
+    format(string, sizeof string, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° ГўГ»Г¤Г Г« ГўГ Г¬ %s.", name_gun[weaponid - 1], ammo);
     SendClientMessage(receiverid, -1, string);
     return GivePlayerWeapon(receiverid, weaponid, ammo);
 }
@@ -599,21 +599,21 @@ CMD:sethealth(playerid, params[])
     if (sscanf(params, "ii", receiverid, player_health))
     {
         if (!sscanf(params, "i", player_health)) receiverid = playerid;
-        else return SendClientMessage(playerid, -1, "Используйте: /sethealth <id игрока> <здоровье>");
+        else return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /sethealth <id ГЁГЈГ°Г®ГЄГ > <Г§Г¤Г®Г°Г®ГўГјГҐ>");
     }
-    else if (!IsPlayerConnected(receiverid) && receiverid != -1) return SendClientMessage(playerid, -1, "Игрока с таким ID нет на сервере!");
-    if (player_health > 100 || player_health < 0) return SendClientMessage(playerid, -1, "Здоровье находится в промежутке [0, 100]");
+    else if (!IsPlayerConnected(receiverid) && receiverid != -1) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄГ  Г± ГІГ ГЄГЁГ¬ ID Г­ГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ!");
+    if (player_health > 100 || player_health < 0) return SendClientMessage(playerid, -1, "Г‡Г¤Г®Г°Г®ГўГјГҐ Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў ГЇГ°Г®Г¬ГҐГ¦ГіГІГЄГҐ [0, 100]");
     if (receiverid == -1)
     {
         for (new i = 0, j = GetPlayerPoolSize(); i <= j; i++)
         {
             if (!IsPlayerConnected(i)) continue;
             SetPlayerHealth(i, player_health);
-            SendClientMessage(i, -1, "Игровой мастер изменил ваш уровень здоровья!");
+            SendClientMessage(i, -1, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° ГЁГ§Г¬ГҐГ­ГЁГ« ГўГ Гё ГіГ°Г®ГўГҐГ­Гј Г§Г¤Г®Г°Г®ГўГјГї!");
         }
         return 1;
     }
-    SendClientMessage(receiverid, -1, "Игровой мастер изменил ваш уровень здоровья!");
+    SendClientMessage(receiverid, -1, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° ГЁГ§Г¬ГҐГ­ГЁГ« ГўГ Гё ГіГ°Г®ГўГҐГ­Гј Г§Г¤Г®Г°Г®ГўГјГї!");
     return SetPlayerHealth(receiverid, player_health);
 }
 
@@ -623,21 +623,21 @@ CMD:setarmour(playerid, params[])
     if (sscanf(params, "ii", receiverid, player_armour))
     {
         if (!sscanf(params, "i", player_armour)) receiverid = playerid;
-        else return SendClientMessage(playerid, -1, "Используйте: /sethealth <id игрока> <броня>");
+        else return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /sethealth <id ГЁГЈГ°Г®ГЄГ > <ГЎГ°Г®Г­Гї>");
     }
-    else if (!IsPlayerConnected(receiverid) && receiverid != -1) return SendClientMessage(playerid, -1, "Игрока с таким ID нет на сервере!");
-    if (player_armour > 100 || player_armour < 0) return SendClientMessage(playerid, -1, "Уровень брони находится в промежутке [0, 100]");
+    else if (!IsPlayerConnected(receiverid) && receiverid != -1) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄГ  Г± ГІГ ГЄГЁГ¬ ID Г­ГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ!");
+    if (player_armour > 100 || player_armour < 0) return SendClientMessage(playerid, -1, "Г“Г°Г®ГўГҐГ­Гј ГЎГ°Г®Г­ГЁ Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў ГЇГ°Г®Г¬ГҐГ¦ГіГІГЄГҐ [0, 100]");
     if (receiverid == -1)
     {
         for (new i = 0, j = GetPlayerPoolSize(); i <= j; i++)
         {
             if (!IsPlayerConnected(i)) continue;
             SetPlayerArmour(i, player_armour);
-            SendClientMessage(i, -1, "Игровой мастер изменил ваш уровень брони!");
+            SendClientMessage(i, -1, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° ГЁГ§Г¬ГҐГ­ГЁГ« ГўГ Гё ГіГ°Г®ГўГҐГ­Гј ГЎГ°Г®Г­ГЁ!");
         }
         return 1;
     }
-    SendClientMessage(receiverid, -1, "Игровой мастер изменил ваш уровень брони!");
+    SendClientMessage(receiverid, -1, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° ГЁГ§Г¬ГҐГ­ГЁГ« ГўГ Гё ГіГ°Г®ГўГҐГ­Гј ГЎГ°Г®Г­ГЁ!");
     return SetPlayerArmour(receiverid, player_armour);
 }
 
@@ -647,31 +647,31 @@ CMD:setskin(playerid, params[])
     if (sscanf(params, "ii", receiverid, skinid))
     {
         if (!sscanf(params, "i", skinid)) receiverid = playerid;
-        else return SendClientMessage(playerid, -1, "Используйте: /setskin <id игрока> <id скина>");
+        else return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /setskin <id ГЁГЈГ°Г®ГЄГ > <id Г±ГЄГЁГ­Г >");
     }
-    else if (!IsPlayerConnected(receiverid)  && receiverid != -1) return SendClientMessage(playerid, -1, "Игрока с таким ID нет на сервере!");
-    if (skinid < 0 || skinid > 311) return SendClientMessage(playerid, -1, "Номера скинов находятся в промежутке [0, 311]");
+    else if (!IsPlayerConnected(receiverid)  && receiverid != -1) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄГ  Г± ГІГ ГЄГЁГ¬ ID Г­ГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ!");
+    if (skinid < 0 || skinid > 311) return SendClientMessage(playerid, -1, "ГЌГ®Г¬ГҐГ°Г  Г±ГЄГЁГ­Г®Гў Г­Г ГµГ®Г¤ГїГІГ±Гї Гў ГЇГ°Г®Г¬ГҐГ¦ГіГІГЄГҐ [0, 311]");
     if (receiverid == -1)
     {
         for (new i = 0, j = GetPlayerPoolSize(); i <= j; i++)
         {
             if (!IsPlayerConnected(i)) continue;
             SetPlayerSkin(i, skinid);
-            SendClientMessage(i, -1, "Игровой мастер изменил ваш набор одежды!");
+            SendClientMessage(i, -1, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° ГЁГ§Г¬ГҐГ­ГЁГ« ГўГ Гё Г­Г ГЎГ®Г° Г®Г¤ГҐГ¦Г¤Г»!");
         }
         return 1;
     }
-    SendClientMessage(receiverid, -1, "Игровой мастер изменил ваш набор одежды!");
+    SendClientMessage(receiverid, -1, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° ГЁГ§Г¬ГҐГ­ГЁГ« ГўГ Гё Г­Г ГЎГ®Г° Г®Г¤ГҐГ¦Г¤Г»!");
     return SetPlayerSkin(receiverid, skinid);
 }
 
 CMD:spawnveh(playerid, params[])
 {
     new vehicleid, color1, color2, siren;
-    if (sscanf(params, "iiii", vehicleid, color1, color2, siren)) return SendClientMessage(playerid, -1, "Используйте: /spawnveh <id транспорта> <Цвет 1> <Цвет 2> <Сирена>");
-    if (vehicleid < 400 || vehicleid > 610) return SendClientMessage(playerid, -1, "Номера транспорта находятся в промежутке [400, 610]");
-    if (color1 < 0 || color1 > 128 || color2 < 0 || color2 > 128) return SendClientMessage(playerid, -1, "Номера цвета находятся в промежутке [0, 128]");
-    if (siren != 0 && siren != 1) return SendClientMessage(playerid, -1, "Значение поля 'Сирена' может быть 1 или 0");
+    if (sscanf(params, "iiii", vehicleid, color1, color2, siren)) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /spawnveh <id ГІГ°Г Г­Г±ГЇГ®Г°ГІГ > <Г–ГўГҐГІ 1> <Г–ГўГҐГІ 2> <Г‘ГЁГ°ГҐГ­Г >");
+    if (vehicleid < 400 || vehicleid > 610) return SendClientMessage(playerid, -1, "ГЌГ®Г¬ГҐГ°Г  ГІГ°Г Г­Г±ГЇГ®Г°ГІГ  Г­Г ГµГ®Г¤ГїГІГ±Гї Гў ГЇГ°Г®Г¬ГҐГ¦ГіГІГЄГҐ [400, 610]");
+    if (color1 < 0 || color1 > 128 || color2 < 0 || color2 > 128) return SendClientMessage(playerid, -1, "ГЌГ®Г¬ГҐГ°Г  Г¶ГўГҐГІГ  Г­Г ГµГ®Г¤ГїГІГ±Гї Гў ГЇГ°Г®Г¬ГҐГ¦ГіГІГЄГҐ [0, 128]");
+    if (siren != 0 && siren != 1) return SendClientMessage(playerid, -1, "Г‡Г­Г Г·ГҐГ­ГЁГҐ ГЇГ®Г«Гї 'Г‘ГЁГ°ГҐГ­Г ' Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј 1 ГЁГ«ГЁ 0");
     new player_vehid = GetPlayerVehicleID(playerid);
     if (player_vehid != 0 && GetPlayerState(playerid) == PLAYER_STATE_DRIVER) DestroyVehicle(player_vehid);
     new Float:x, Float:y, Float:z, Float:a;
@@ -684,12 +684,12 @@ CMD:ungun(playerid, params[])
 {
     if (isnull(params))
     {
-        SendClientMessage(playerid, -1, "Вы очистили всё ваше оружие!");
+        SendClientMessage(playerid, -1, "Г‚Г» Г®Г·ГЁГ±ГІГЁГ«ГЁ ГўГ±Вё ГўГ ГёГҐ Г®Г°ГіГ¦ГЁГҐ!");
         return ResetPlayerWeapons(playerid);
     }
-    if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Используйте: /ungun <id игрока>");
-    if (!IsPlayerConnected(params[0])) return SendClientMessage(playerid, -1, "Игрока с таким ID нет на сервере!");
-    SendClientMessage(params[0], -1, "Игровой мастер забрал всё ваше оружие!");
+    if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /ungun <id ГЁГЈГ°Г®ГЄГ >");
+    if (!IsPlayerConnected(params[0])) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄГ  Г± ГІГ ГЄГЁГ¬ ID Г­ГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ!");
+    SendClientMessage(params[0], -1, "Г€ГЈГ°Г®ГўГ®Г© Г¬Г Г±ГІГҐГ° Г§Г ГЎГ°Г Г« ГўГ±Вё ГўГ ГёГҐ Г®Г°ГіГ¦ГЁГҐ!");
     return ResetPlayerWeapons(params[0]);
 }
 
@@ -697,23 +697,22 @@ CMD:getanim(playerid, params[])
 {
     new animid = GetPlayerAnimationIndex(playerid);
     new string[29];
-    format(string, sizeof string, "Номер текущей анимации: %d", animid);
+    format(string, sizeof string, "ГЌГ®Г¬ГҐГ° ГІГҐГЄГіГ№ГҐГ© Г Г­ГЁГ¬Г Г¶ГЁГЁ: %d", animid);
     return SendClientMessage(playerid, -1, string);
 }
 
-/*
 CMD:god(playerid, params[])
 {
     new Float:player_health;
     if (GetPVarInt(playerid, "IsGod"))
     {
-        SendClientMessage(playerid, -1, "Вы деактивировали режим Бога!");
+        SendClientMessage(playerid, -1, "Г‚Г» Г¤ГҐГ ГЄГІГЁГўГЁГ°Г®ГўГ Г«ГЁ Г°ГҐГ¦ГЁГ¬ ГЃГ®ГЈГ !");
         player_health = MAX_PLAYER_HEALTH;
         SetPVarInt(playerid, "IsGod", 0);
     }
     else
     {
-        SendClientMessage(playerid, -1, "Вы активировали режим Бога!");
+        SendClientMessage(playerid, -1, "Г‚Г» Г ГЄГІГЁГўГЁГ°Г®ГўГ Г«ГЁ Г°ГҐГ¦ГЁГ¬ ГЃГ®ГЈГ !");
         player_health = FLOAT_INFINITY;
         SetPVarInt(playerid, "IsGod", 1);
     }
@@ -724,19 +723,18 @@ CMD:kill(playerid, params[])
 {
     if (isnull(params)) return SetPlayerHealth(playerid, 0);
     new receiverid;
-    if (sscanf(params, "i", receiverid)) return SendClientMessage(playerid, -1, "Используйте: /kill <id игрока>");
-    if (!IsPlayerConnected(receiverid)) return SendClientMessage(playerid, -1, "Игрока с таким ID нет на сервере!");
-    if (GetPVarInt(receiverid, "IsGod")) return SendClientMessage(playerid, -1, "Игрок находится в режиме Бога!");
+    if (sscanf(params, "i", receiverid)) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /kill <id ГЁГЈГ°Г®ГЄГ >");
+    if (!IsPlayerConnected(receiverid)) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄГ  Г± ГІГ ГЄГЁГ¬ ID Г­ГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ!");
+    if (GetPVarInt(receiverid, "IsGod")) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄ Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў Г°ГҐГ¦ГЁГ¬ГҐ ГЃГ®ГЈГ !");
     return SetPlayerHealth(receiverid, 0);
 }
-*/
 
 CMD:setfraction(playerid, params[])
 {
-    if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Используйте: /setorg <id организации>");
-    if (params[0] < 0 || params[0] > 7) return SendClientMessage(playerid, -1, "ID организаций находятся в промежутке [0, 7]!");
+    if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /setorg <id Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ>");
+    if (params[0] < 0 || params[0] > 7) return SendClientMessage(playerid, -1, "ID Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГ© Г­Г ГµГ®Г¤ГїГІГ±Гї Гў ГЇГ°Г®Г¬ГҐГ¦ГіГІГЄГҐ [0, 7]!");
     new string[46];
-    format(string, sizeof string, "Ваша организация изменена на: %s", stringFractions[params[0]]);
+    format(string, sizeof string, "Г‚Г ГёГ  Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГї ГЁГ§Г¬ГҐГ­ГҐГ­Г  Г­Г : %s", stringFractions[params[0]]);
     SendClientMessage(playerid, -1, string);
     return SetPlayerFraction(playerid, params[0]);
 }
@@ -752,54 +750,54 @@ stock SetPlayerFraction(playerid, fraction)
 
 CMD:givemoney(playerid, params[])
 {
-    if (sscanf(params, "d", params[0])) return SendClientMessage(playerid, -1, "Используйте: /givemoney <Сумма>");
+    if (sscanf(params, "d", params[0])) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /givemoney <Г‘ГіГ¬Г¬Г >");
     return GivePlayerMoney(playerid, params[0]);
 }
 
 CMD:pay(playerid, params[])
 {
     new receiverid, amount;
-    if (sscanf(params, "ii", receiverid, amount)) return SendClientMessage(playerid, -1, "Используйте: /pay <id игрока> <Сумма>");
-    if (playerid == receiverid) return SendClientMessage(playerid, -1, "Вы не можете передать деньги самому себе!");
-    if (!IsPlayerConnected(receiverid)) return SendClientMessage(playerid, -1, "Игрока с таким ID нет на сервере!");
-    if (GetDistanceBetweenPlayers(playerid, receiverid) > 5.0) return SendClientMessage(playerid, -1, "Игрок находится слишком далеко!");
-    if (GetPlayerMoney(playerid) < amount) return SendClientMessage(playerid, -1, "У вас недостаточно средств!");
-    if (amount < 1) return SendClientMessage(playerid, -1, "Вы не можете передать меньше одного рубля!");
-    if (amount > 3000) return SendClientMessage(playerid, -1, "Вы не можете передать больше трёх тысяч рублей!");
+    if (sscanf(params, "ii", receiverid, amount)) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /pay <id ГЁГЈГ°Г®ГЄГ > <Г‘ГіГ¬Г¬Г >");
+    if (playerid == receiverid) return SendClientMessage(playerid, -1, "Г‚Г» Г­ГҐ Г¬Г®Г¦ГҐГІГҐ ГЇГҐГ°ГҐГ¤Г ГІГј Г¤ГҐГ­ГјГЈГЁ Г±Г Г¬Г®Г¬Гі Г±ГҐГЎГҐ!");
+    if (!IsPlayerConnected(receiverid)) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄГ  Г± ГІГ ГЄГЁГ¬ ID Г­ГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ!");
+    if (GetDistanceBetweenPlayers(playerid, receiverid) > 5.0) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄ Г­Г ГµГ®Г¤ГЁГІГ±Гї Г±Г«ГЁГёГЄГ®Г¬ Г¤Г Г«ГҐГЄГ®!");
+    if (GetPlayerMoney(playerid) < amount) return SendClientMessage(playerid, -1, "Г“ ГўГ Г± Г­ГҐГ¤Г®Г±ГІГ ГІГ®Г·Г­Г® Г±Г°ГҐГ¤Г±ГІГў!");
+    if (amount < 1) return SendClientMessage(playerid, -1, "Г‚Г» Г­ГҐ Г¬Г®Г¦ГҐГІГҐ ГЇГҐГ°ГҐГ¤Г ГІГј Г¬ГҐГ­ГјГёГҐ Г®Г¤Г­Г®ГЈГ® Г°ГіГЎГ«Гї!");
+    if (amount > 3000) return SendClientMessage(playerid, -1, "Г‚Г» Г­ГҐ Г¬Г®Г¦ГҐГІГҐ ГЇГҐГ°ГҐГ¤Г ГІГј ГЎГ®Г«ГјГёГҐ ГІГ°ВёГµ ГІГ»Г±ГїГ· Г°ГіГЎГ«ГҐГ©!");
     GivePlayerMoney(playerid, -amount);
     GivePlayerMoney(receiverid, amount);
     new string[144];
-    format(string, sizeof string, "%s передал %s %d рублей", Players[playerid][pName], Players[receiverid][pName], amount);
+    format(string, sizeof string, "%s ГЇГҐГ°ГҐГ¤Г Г« %s %d Г°ГіГЎГ«ГҐГ©", Players[playerid][pName], Players[receiverid][pName], amount);
     return ProxDetector(playerid, 20.0, 0xFF99CCAA, string);
 }
 
 CMD:eject(playerid, params[])
 {
-    if (GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return SendClientMessage(playerid, -1, "Вы не находитесь за рулём транспорта!");
-    if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Используйте: /eject <id игрока>");
-    if (playerid == params[0]) return SendClientMessage(playerid, -1, "Вы не можете выгнать самого себя!");
-    if (GetPlayerVehicleID(params[0]) != GetPlayerVehicleID(playerid)) return SendClientMessage(playerid, -1, "Игрока с таким ID нет в машине!");
+    if (GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return SendClientMessage(playerid, -1, "Г‚Г» Г­ГҐ Г­Г ГµГ®Г¤ГЁГІГҐГ±Гј Г§Г  Г°ГіГ«ВёГ¬ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ !");
+    if (sscanf(params, "i", params[0])) return SendClientMessage(playerid, -1, "Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /eject <id ГЁГЈГ°Г®ГЄГ >");
+    if (playerid == params[0]) return SendClientMessage(playerid, -1, "Г‚Г» Г­ГҐ Г¬Г®Г¦ГҐГІГҐ ГўГ»ГЈГ­Г ГІГј Г±Г Г¬Г®ГЈГ® Г±ГҐГЎГї!");
+    if (GetPlayerVehicleID(params[0]) != GetPlayerVehicleID(playerid)) return SendClientMessage(playerid, -1, "Г€ГЈГ°Г®ГЄГ  Г± ГІГ ГЄГЁГ¬ ID Г­ГҐГІ Гў Г¬Г ГёГЁГ­ГҐ!");
     new string[23 + (-2 + MAX_PLAYER_NAME)];
-    format(string, sizeof string, "выкинул из транспорта %s", Players[params[0]][pName]);
+    format(string, sizeof string, "ГўГ»ГЄГЁГ­ГіГ« ГЁГ§ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ  %s", Players[params[0]][pName]);
     callcmd::me(playerid, string);
     return RemovePlayerFromVehicle(params[0]);
 }
 
 CMD:fix(playerid, params[])
 {
-    if (GetPlayerState(playerid) == PLAYER_STATE_DRIVER) return SendClientMessage(playerid, -1, "Эту команду нельзя использовать в транспорте!");
-    if (Players[playerid][pRepairkits] <= 0) return SendClientMessage(playerid, -1, "У вас нет ремонтного набора!");
+    if (GetPlayerState(playerid) == PLAYER_STATE_DRIVER) return SendClientMessage(playerid, -1, "ГќГІГі ГЄГ®Г¬Г Г­Г¤Гі Г­ГҐГ«ГјГ§Гї ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј Гў ГІГ°Г Г­Г±ГЇГ®Г°ГІГҐ!");
+    if (Players[playerid][pRepairkits] <= 0) return SendClientMessage(playerid, -1, "Г“ ГўГ Г± Г­ГҐГІ Г°ГҐГ¬Г®Г­ГІГ­Г®ГЈГ® Г­Г ГЎГ®Г°Г !");
     new vehicleid = GetNearestVehicle(playerid, 3);
-    if (vehicleid == 0) return SendClientMessage(playerid, -1, "Рядом с вами нет транспортного средства!");
+    if (vehicleid == 0) return SendClientMessage(playerid, -1, "ГђГїГ¤Г®Г¬ Г± ГўГ Г¬ГЁ Г­ГҐГІ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г®ГЈГ® Г±Г°ГҐГ¤Г±ГІГўГ !");
     printf("%d", vehicleid);
     new engine, lights, alarm, doors, bonnet, boot, objective;
 	GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
-    if (engine == VEHICLE_PARAMS_ON) return SendClientMessage(playerid, -1, "Двигатель должен быть заглушен!");
+    if (engine == VEHICLE_PARAMS_ON) return SendClientMessage(playerid, -1, "Г„ГўГЁГЈГ ГІГҐГ«Гј Г¤Г®Г«Г¦ГҐГ­ ГЎГ»ГІГј Г§Г ГЈГ«ГіГёГҐГ­!");
     new Float: vehiclehealth;
     GetVehicleHealth(vehicleid, vehiclehealth);
-    if (vehiclehealth >= 900) return SendClientMessage(playerid, -1, "Транспорт не нуждается в починке!");
+    if (vehiclehealth >= 900) return SendClientMessage(playerid, -1, "Г’Г°Г Г­Г±ГЇГ®Г°ГІ Г­ГҐ Г­ГіГ¦Г¤Г ГҐГІГ±Гї Гў ГЇГ®Г·ГЁГ­ГЄГҐ!");
     Players[playerid][pRepairkits]--;
-    new string[] = "починил транспортное средство";
+    new string[] = "ГЇГ®Г·ГЁГ­ГЁГ« ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г®ГҐ Г±Г°ГҐГ¤Г±ГІГўГ®";
     callcmd::me(playerid, string);
     return SetVehicleHealth(vehicleid, VEHICLE_MAX_HEALTH);
 }
@@ -912,12 +910,12 @@ stock PickupsInit()
 
 stock ShowPlayerDialogAnimationsList(playerid)
 {
-    return ShowPlayerDialog(playerid, DLG_ANIMLIST, DIALOG_STYLE_LIST, "Список анимаций", "1. Пьяная походка\n2. Поцелуй 1\n3. Поцелуй 2\n4. Поцелуй 3\n5. Сесть, оперевшись на руку", "Применить", "Отмена");
+    return ShowPlayerDialog(playerid, DLG_ANIMLIST, DIALOG_STYLE_LIST, "Г‘ГЇГЁГ±Г®ГЄ Г Г­ГЁГ¬Г Г¶ГЁГ©", "1. ГЏГјГїГ­Г Гї ГЇГ®ГµГ®Г¤ГЄГ \n2. ГЏГ®Г¶ГҐГ«ГіГ© 1\n3. ГЏГ®Г¶ГҐГ«ГіГ© 2\n4. ГЏГ®Г¶ГҐГ«ГіГ© 3\n5. Г‘ГҐГ±ГІГј, Г®ГЇГҐГ°ГҐГўГёГЁГ±Гј Г­Г  Г°ГіГЄГі", "ГЏГ°ГЁГ¬ГҐГ­ГЁГІГј", "ГЋГІГ¬ГҐГ­Г ");
 }
 
 stock ShowPlayerDialogShopAllDay(playerid)
 {
-    return ShowPlayerDialog(playerid, DLG_SHOP_ALLDAY, DIALOG_STYLE_LIST, "Магазин 24/7", "1. Чипсы (с собой)\n2. Пицца (с собой)\n3. Букет цветов 'Миллион алых роз'\n4. Медицинская аптечка\n5. Фотоаппарат\n6. Баллончик с краской\n7. Маска\n8. Ремонтный набор\n9. Домкрат", "Купить", "Выход");
+    return ShowPlayerDialog(playerid, DLG_SHOP_ALLDAY, DIALOG_STYLE_LIST, "ГЊГ ГЈГ Г§ГЁГ­ 24/7", "1. Г—ГЁГЇГ±Г» (Г± Г±Г®ГЎГ®Г©)\n2. ГЏГЁГ¶Г¶Г  (Г± Г±Г®ГЎГ®Г©)\n3. ГЃГіГЄГҐГІ Г¶ГўГҐГІГ®Гў 'ГЊГЁГ«Г«ГЁГ®Г­ Г Г«Г»Гµ Г°Г®Г§'\n4. ГЊГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГ Гї Г ГЇГІГҐГ·ГЄГ \n5. Г”Г®ГІГ®Г ГЇГЇГ Г°Г ГІ\n6. ГЃГ Г«Г«Г®Г­Г·ГЁГЄ Г± ГЄГ°Г Г±ГЄГ®Г©\n7. ГЊГ Г±ГЄГ \n8. ГђГҐГ¬Г®Г­ГІГ­Г»Г© Г­Г ГЎГ®Г°\n9. Г„Г®Г¬ГЄГ°Г ГІ", "ГЉГіГЇГЁГІГј", "Г‚Г»ГµГ®Г¤");
 }
 
 stock HasPlayerWeapon(playerid, weaponid)
@@ -949,12 +947,12 @@ stock OnPlayerClearAnimation(playerid)
 
 stock OnPlayerSetAnimation(playerid, index, Float:fDelta = 4.1, loop = 0, lockx = 0, locky = 0, freeze = 0, time = 0, forcesync = 1)
 {
-    if (GetPlayerVehicleID(playerid) != 0) return SendClientMessage(playerid, -1, "Анимации нельзя использовать в транспорте!");
+    if (GetPlayerVehicleID(playerid) != 0) return SendClientMessage(playerid, -1, "ГЂГ­ГЁГ¬Г Г¶ГЁГЁ Г­ГҐГ«ГјГ§Гї ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј Гў ГІГ°Г Г­Г±ГЇГ®Г°ГІГҐ!");
     new current_anim = GetPlayerAnimationIndex(playerid);
     if (current_anim != 1189 && current_anim != 1133 && current_anim != 1132 
     && current_anim != 0 && current_anim != 1275 && current_anim != 1181 
     && current_anim != 1182 && current_anim != 1188 && current_anim != 1183 
-    && current_anim != 1186 && current_anim != 1188) return SendClientMessage(playerid, -1, "Вы не можете использовать анимации в текущий момент времени!");
+    && current_anim != 1186 && current_anim != 1188) return SendClientMessage(playerid, -1, "Г‚Г» Г­ГҐ Г¬Г®Г¦ГҐГІГҐ ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј Г Г­ГЁГ¬Г Г¶ГЁГЁ Гў ГІГҐГЄГіГ№ГЁГ© Г¬Г®Г¬ГҐГ­ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ!");
     if (loop | freeze)
     {
         SetPVarInt(playerid, "CanClearAnim", 1);
@@ -1149,7 +1147,7 @@ stock IsVehicleBicycle(vehicleid)
 
 stock InitGlobalTextDraws()
 {
-    text_draws[text_stop_anim] = TextDrawCreate(250.000000, 375.000000, "LShift - отменить анимацию.");
+    text_draws[text_stop_anim] = TextDrawCreate(250.000000, 375.000000, "LShift - Г®ГІГ¬ГҐГ­ГЁГІГј Г Г­ГЁГ¬Г Г¶ГЁГѕ.");
     TextDrawFont(text_draws[text_stop_anim], 1);
     TextDrawLetterSize(text_draws[text_stop_anim], 0.320833, 2.000000);
     TextDrawTextSize(text_draws[text_stop_anim], 458.000000, 0.000000);
@@ -1163,7 +1161,7 @@ stock InitGlobalTextDraws()
     TextDrawSetProportional(text_draws[text_stop_anim], 1);
     TextDrawSetSelectable(text_draws[text_stop_anim], 0);
 
-    text_draws[text_getting_vehicle] = TextDrawCreate(250.000000, 375.000000, "Ctrl - завести транспорт.");
+    text_draws[text_getting_vehicle] = TextDrawCreate(250.000000, 375.000000, "Ctrl - Г§Г ГўГҐГ±ГІГЁ ГІГ°Г Г­Г±ГЇГ®Г°ГІ.");
     TextDrawFont(text_draws[text_getting_vehicle], 1);
     TextDrawLetterSize(text_draws[text_getting_vehicle], 0.320833, 2.000000);
     TextDrawTextSize(text_draws[text_getting_vehicle], 458.000000, 0.000000);
@@ -1177,7 +1175,7 @@ stock InitGlobalTextDraws()
     TextDrawSetProportional(text_draws[text_getting_vehicle], 1);
     TextDrawSetSelectable(text_draws[text_getting_vehicle], 0);
 
-    text_draws[text_engine_broken] = TextDrawCreate(203.000000, 272.000000, "Двигатель сломан! Попробуй ещё раз!");
+    text_draws[text_engine_broken] = TextDrawCreate(203.000000, 272.000000, "Г„ГўГЁГЈГ ГІГҐГ«Гј Г±Г«Г®Г¬Г Г­! ГЏГ®ГЇГ°Г®ГЎГіГ© ГҐГ№Вё Г°Г Г§!");
     TextDrawFont(text_draws[text_engine_broken], 1);
     TextDrawLetterSize(text_draws[text_engine_broken], 0.600000, 2.000000);
     TextDrawTextSize(text_draws[text_engine_broken], 465.000000, 17.000000);
